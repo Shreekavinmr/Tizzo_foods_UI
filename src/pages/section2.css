@@ -1,0 +1,72 @@
+.section2 {
+  width: 100%;
+  min-height: 100vh;          /* full screen height */
+  display: flex;
+  margin-left: 15rem;
+  background: #fff;
+  padding: 4rem 2rem;
+  overflow: hidden;         
+  box-sizing: border-box;
+}
+
+.text-box {
+  position: relative;
+  background: #1c1c1c;
+  color: #faf4f3;
+  padding: 3rem;
+  border-radius: 15px;
+  max-width: 800px;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  z-index: 1;                 /* keep text above */
+}
+
+.text-box h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;  /* so underline only matches text width */
+  padding-bottom: 0.5rem; /* space between text and underline */
+}
+
+.text-box h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;                /* sits right under the text */
+  width: 50%;               /* underline length (you can adjust 100% for full) */
+  height: 3px;              /* thickness */
+  background: #faf4f3;       /* underline color */
+  border-radius: 2px;
+}
+
+
+.text-box h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.text-box p {
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+.text-box .text-content {
+  width: 50%;                 /* text only half width */
+}
+
+.section2-img {
+  position: absolute;
+  bottom: 0;                  /* stick to bottom of text-box */
+  right: -30%;                /* overflow outward */
+  height: 95%;                /* slightly smaller than box */
+  object-fit: contain;
+  z-index: 2;
+  pointer-events: none;
+}

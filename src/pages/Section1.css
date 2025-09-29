@@ -1,0 +1,120 @@
+.section1 {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+  overflow: hidden;
+  padding: 6rem 0 25rem 0;  
+  text-align: center;
+}
+
+/* Orange bubbles floating */
+.bubbles {
+  position: absolute;
+  inset: 0; /* cover entire section */
+  pointer-events: none;
+  z-index: 0;
+}
+
+.bubbles span {
+  position: absolute;
+  background: #f26d25;
+  border-radius: 50%;
+  opacity: 0.6;
+  animation: float 90s infinite linear;  /* very slow */
+}
+
+@keyframes float {
+  0% { transform: translateY(100vh) scale(1); }
+  100% { transform: translateY(-200vh) scale(0.6); }
+}
+/* Heading image */
+.heading_section1 {
+  margin-bottom: 5rem;
+  position: relative;
+  z-index: 5;
+}
+.heading_section1 img {
+  max-width: 1200px; /* adjust size */
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+/* Strips wrapper */
+.strips {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8rem; /* consistent spacing even with rotation */
+}
+
+/* Each strip */
+/* Common strip styles */
+.product-strip {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 180px;
+  padding: 0 2rem;
+  border-radius: 0 15px 15px 0;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  position: relative;
+  overflow: visible;
+  max-width: 1200px; /* optional: cap width on large screens */
+
+}
+
+/* Different lengths for each strip */
+.strip-1 {transform: rotate(-25deg) translateX(-75%) }
+.strip-2 { transform: rotate(-25deg) translateX(-10%)}
+.strip-3 { transform: rotate(-25deg) translateX(-20%)}
+.strip-4 { transform: rotate(-25deg) translateX(-35%) }
+
+
+
+
+/* Remove last strip margin so no extra space at bottom */
+.product-strip:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Text */
+.strip-text {
+  margin-right: 6rem;
+  white-space: nowrap;
+  z-index: 1;
+  font-size: 4rem;
+}
+
+.strip-1 .strip-text {
+  color: rgb(213, 90, 1); /* orange */
+}
+
+.strip-2 .strip-text {
+  color: rgb(0, 12, 32); /* dark blue */
+}
+
+.strip-3 .strip-text {
+  color: #4f0404; /* light blue */
+}
+
+.strip-4 .strip-text {
+  color: rgb(124, 78, 10); /* red */
+}
+
+.packet-img {
+  height: 200px;
+  object-fit: contain;
+  position: absolute;
+  right: -30px;   /* push slightly outside so it hides the strip corner */
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;     /* ensure it overlaps strip */
+  pointer-events: none; /* avoid blocking strip hover/click */
+}
+
+

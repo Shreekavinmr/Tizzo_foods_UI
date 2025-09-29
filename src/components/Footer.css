@@ -1,0 +1,400 @@
+/* Enquiry Form Styles */
+.enquiry-form-container {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  margin-bottom: -500px; /* Overlaps into footer by half */
+}
+
+.enquiry-form {
+  background: #26306a;
+  border-radius: 20px;
+  padding: 70px;
+  padding-left: 100px;
+  padding-right: 100px;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  position: relative;
+  margin-top: 10rem;
+}
+
+.form-title {
+  color: #f26d25;
+  font-size: 28px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.form-group input {
+  padding: 20px 15px;
+  border: none;
+  border-radius: 8px;
+  background: white;
+  font-size: 14px;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.form-group input:focus {
+  box-shadow: 0 0 0 2px #f26d25;
+}
+
+.form-group input::placeholder {
+  color: #999;
+}
+
+.form-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.form-checkbox input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #f26d25;
+}
+
+.form-checkbox label {
+  color: #f26d25;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.submit-btn {
+  background: #f26d25;
+  color: #26306a;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  background: #f26d25;
+  transform: translateY(-2px);
+}
+
+/* Footer.css */
+.footer {
+  background: #f26d25;
+  color: white;
+  padding: 250px 0 0 0; /* Added top padding to account for overlapping form */
+  position: relative;
+  overflow: hidden;
+  margin-top: 10rem;
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1px 2fr 1px 1fr;
+  gap: 60px;
+  align-items: end;
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  padding: 0 40px 20px 40px;
+}
+
+/* Footer horizontal sections */
+.footer-top {
+  flex: 1;
+  /* Empty for now - future content */
+}
+
+.footer-middle {
+  flex: 1;
+  /* Empty for now - future content */
+}
+
+.footer-bottom {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 20px 0;
+}
+
+/* Left Section */
+.footer-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 400px;
+  align-self: end;
+  margin-bottom: 2rem;
+}
+
+/* Vertical Dividers */
+.footer-divider {
+  width: 1px;
+  height: 150px;
+  background: rgba(255, 255, 255, 0.3);
+  align-self: end;
+  margin-bottom: 20px;
+}
+
+/* Horizontal Divider */
+.footer-horizontal-divider {
+  width: 70%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.3);
+  margin: auto;
+}
+.footer-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.footer-description {
+  font-size: 16px;
+  line-height: 1.5;
+  color: white;
+  margin: 0;
+  padding-top: 8px;
+}
+
+/* Center Section */
+.footer-center {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  min-width: 300px;
+  justify-self: center;
+  align-self: end;
+  margin-bottom: 3rem;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: opacity 0.3s ease;
+  white-space: nowrap;
+}
+
+.footer-link:hover {
+  color: #26306a;
+}
+
+/* Right Section */
+.footer-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 100%;
+  align-self: end;
+  margin-bottom: 4rem;
+}
+
+.footer-copyright {
+  font-size: 16px;
+  color: white;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Decorative Circles */
+.decorative-circle {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.circle-1 {
+  width: 120px;
+  height: 120px;
+  top: -20px;
+  right: 15%;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.circle-2 {
+  width: 60px;
+  height: 60px;
+  top: 40px;
+  right: 25%;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.circle-3 {
+  width: 80px;
+  height: 80px;
+  bottom: -10px;
+  left: 20%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.circle-4 {
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  left: 10%;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .enquiry-form-container {
+    margin-bottom: -200px;
+    padding: 0 20px;
+  }
+  
+  .enquiry-form {
+    max-width: 600px;
+  }
+  
+  .footer {
+    padding-top: 200px;
+  }
+  
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: left;
+  }
+  
+  .footer-divider {
+    display: none;
+  }
+  
+  .footer-center {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    justify-self: start;
+  }
+  
+  .footer-right {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .enquiry-form-container {
+    margin-bottom: -180px;
+    padding: 0 15px;
+  }
+  
+  .enquiry-form {
+    padding: 30px 25px;
+  }
+  
+  .form-title {
+    font-size: 24px;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .footer {
+    padding: 180px 20px 40px 20px;
+  }
+  
+  .footer-left {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .footer-logo {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .footer-center {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .footer-column {
+    gap: 15px;
+  }
+  
+  .footer-link {
+    font-size: 16px;
+  }
+  
+  .footer-description {
+    font-size: 14px;
+  }
+  
+  .footer-copyright {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .enquiry-form-container {
+    margin-bottom: -150px;
+    padding: 0 10px;
+  }
+  
+  .enquiry-form {
+    padding: 25px 20px;
+  }
+  
+  .form-title {
+    font-size: 20px;
+  }
+  
+  .footer {
+    padding: 150px 15px 30px 15px;
+  }
+  
+  .footer-container {
+    gap: 30px;
+  }
+}

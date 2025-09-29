@@ -1,0 +1,19 @@
+.section5 {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+.contact-image {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 6rem;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px; /* optional for softer look */
+}
