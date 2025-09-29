@@ -3,7 +3,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Section1 from "./pages/Section1";
-import Section2 from "./pages/section2";
+import Section2 from "./pages/Section2";
 import Section3 from "./pages/Section3";
 import Section4 from "./pages/Section4";
 import Section5 from "./pages/Section5";
