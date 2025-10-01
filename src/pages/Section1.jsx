@@ -3,17 +3,17 @@ import "./Section1.css";
 import bgImage from '/section2-bg.png';
 import { motion } from "framer-motion";
 
-import section1_p1 from "/section1_a1.png";
-import section1_p2 from "/section1_a2.png";
-import section1_p3 from "/section1_a3.png";
-import section1_p4 from "/section1_a4.png";
+import section1_p1 from "/section1_b1.png";
+import section1_p2 from "/section1_b2.png";
+import section1_p3 from "/section1_b3.png";
+import section1_p4 from "/section1_b4.png";
 import heading_section1 from "/heading_section2.png"; // ✅ heading image
 
 const products = [
-  { image: section1_p1, text: "IT’S", color: "#f4d35e", cls: "strip-1", width: "90%" },
-  { image: section1_p2, text: "MASTI", color: "#1e5bbf", cls: "strip-2", width: "110%" },
-  { image: section1_p3, text: "TIME", color: "#289b54ff", cls: "strip-3", width: "100%" },
-  { image: section1_p4, text: "FUN", color: "#690557ff", cls: "strip-4", width: "95%" },
+  { image: section1_p1, text: "POP", color: "#f4d35e", cls: "strip-1", width: "90%" },
+  { image: section1_p2, text: "FIZZ", color: "#1e5bbf", cls: "strip-2", width: "110%" },
+  { image: section1_p3, text: "FEEL", color: "#289b54", cls: "strip-3", width: "100%" },
+  { image: section1_p4, text: "FRESH", color: "#690557", cls: "strip-4", width: "95%" },
 ];
 
 const Section1 = () => {

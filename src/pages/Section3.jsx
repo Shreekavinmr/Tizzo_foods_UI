@@ -42,7 +42,7 @@ const Section3 = () => {
         transition={{ duration: 0.6, ease: "easeOut" }}
         viewport={{ once: false, amount: 0.3 }}
       >
-        <h2>JUST GOT HIP</h2>
+        <h2>JUST GOT FIZZED</h2>
         <motion.div
           className="header-actions"
           initial={{ opacity: 0 }}
