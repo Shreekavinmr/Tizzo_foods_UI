@@ -1,7 +1,7 @@
 .hero {
   position: relative;
   width: 90%;              /* leave padding around the page */
-  height: 80vh;            /* almost full screen */
+  height:90vh;            /* almost full screen */
   margin: 3rem auto;
   border-radius: 25px;     /* curved borders */
   overflow: hidden;
@@ -60,7 +60,7 @@
   display: flex;
   justify-content: center;
   gap: 12px;
-  z-index: 5;
+  z-index: 4;
 }
 
 .dot {

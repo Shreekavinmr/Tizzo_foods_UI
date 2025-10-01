@@ -2,37 +2,31 @@ import React, { useState, useEffect } from "react";
 import "./Home.css";
 
 // Replace with your posters
-import poster1 from "/poster1.jpg";
-import poster2 from "/poster2.jpg";
-import poster3 from "/poster3.jpg";
-import poster4 from "/poster4.jpg";
-import poster5 from "/poster5.jpg";
+import poster1 from "/poster_5.png";
+import poster2 from "/poster_2.png";
+import poster3 from "/poster_4.png";
+import poster4 from "/poster_1.png";
 
 const slides = [
   {
     image: poster1,
-    heading: "Heading 1",
-    description: "This is the description for poster 1.",
+    heading: "Flavours That Spark Joy",
+    description: "Grape, Mango, Lemonade & more – Tizzo & Aslee bring happiness in every sip.",
   },
   {
     image: poster2,
-    heading: "Heading 2",
-    description: "This is the description for poster 2.",
+    heading: "Colours of Refreshment",
+    description: "Taste the fun with Dhool’s fruity flavours. Bright, bold, and bursting with energy.",
   },
   {
     image: poster3,
-    heading: "Heading 3",
-    description: "This is the description for poster 3.",
+    heading: "The Zest of Tizzo",
+    description: "Fresh Club Lemonade and tangy Lemon Salt Soda – the ultimate duo of citrus refreshment.",
   },
   {
     image: poster4,
-    heading: "Heading 4",
-    description: "This is the description for poster 4.",
-  },
-  {
-    image: poster5,
-    heading: "Heading 5",
-    description: "This is the description for poster 5.",
+    heading: "Pure Hydration, Every Size",
+    description: "Stay refreshed with Andavar & Tizzo water bottles. From 250ml to 1L, clean drinking anytime, anywhere.",
   },
 ];
 

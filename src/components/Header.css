@@ -11,7 +11,7 @@
   align-items: center;
   overflow: visible;
   z-index: 100; /* Add z-index to keep header above other content */
-  margin-top: 3rem;
+  margin-top: 1rem;
   top: 2rem;
 }
 

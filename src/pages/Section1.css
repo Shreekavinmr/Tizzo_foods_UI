@@ -35,7 +35,7 @@
   z-index: 5;
 }
 .heading_section1 img {
-  max-width: 1200px; /* adjust size */
+  max-width: 1400px; /* adjust size */
   width: 100%;
   height: auto;
   display: inline-block;
@@ -99,18 +99,18 @@
 }
 
 .strip-3 .strip-text {
-  color: #4f0404; /* light blue */
+  color: #215d38; /* light blue */
 }
 
 .strip-4 .strip-text {
-  color: rgb(124, 78, 10); /* red */
+  color: #260520; /* red */
 }
 
 .packet-img {
   height: 200px;
   object-fit: contain;
   position: absolute;
-  right: -30px;   /* push slightly outside so it hides the strip corner */
+  right: -100px;   /* push slightly outside so it hides the strip corner */
   top: 50%;
   transform: translateY(-50%);
   z-index: 3;     /* ensure it overlaps strip */
